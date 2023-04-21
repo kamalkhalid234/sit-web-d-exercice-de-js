@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exercice-1.css">
+</head>
+<body class="body">
+     <!------------------titre d'exercice---------------->
+     <div class="old">
+         <h1 class="col-1"><marquee >exercice--1</marquee> </h1>
+     </div>
+     <!-----------------exercice------------------>
+     <div class="old-2">
+         <p>Écrivez un programme pour vérifier si un alphabet saisi dans une zone de texte est une
+             voyelle ou une consonne</p>
+     </div>
+     <!---------------------trie l'exercice------------->
+     <div class="kio">
+         <input type="text"  value="" id="pol" placeholder="entre un lettre"><br> 
+         <h1 id="kamal"></h1>
+     </div>
+     <!-----------------les boutton-->
+     <div class="old-3">
+         <a href="solution.html"><button >retour</button></a>
+         <button onclick="col()">clik</button>
+     </div>
+
+
+
+
+<script>       
+    /*-----------------------trie l'exercice 1-------------------*/
+     function col(){
+         let pol = document.getElementById("pol").value.toLowerCase();
+         let affich =document.getElementById("kamal");
+             if (pol === "a" || pol === "e" || pol === "i" || pol === "o" || pol === "u" || pol === "y" ) {
+                 kamal.innerHTML +="La lettre " + pol + " est une voyelle.";
+             }
+             else {
+                 kamal.innerHTML+="La lettre " + pol + " est une consonne.";
+             }}
+
+
+    /*--------------------------menu-----------------*/
+         var MenuItems = document.getElementById("MenuItems");
+         MenuItems.style.maxHeight = "0px";
+         function  menutoggle(){
+             if( MenuItems.style.maxHeight == "0px"){
+                 MenuItems.style.maxHeight = "200px";
+             }
+             else{
+                 MenuItems.style.maxHeight = "0px";
+             } 
+        }    
+</script>
+</body>
+</html>

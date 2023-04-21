@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="solution.css">
+</head>
+<body>
+     <!--------------------nav bar--------------->
+     <div class="header">
+         <div class="container1">
+             <div class="navbar">
+                 <div class="logo">
+                     <img src="logo-1.png" width="50px">
+                 </div>
+                 <nav>
+                     <ul id="MenuItems">
+                         <li><a href="home.html">HOME</a></li>
+                         <li><a href="solution.html">EXERCICE</a></li>
+                         <li><a href="contact.html">CONTACT</a></li>
+                     </ul>
+                     <img src="menu.png" class="menu-icon"  width="30px" onclick="menutoggle()"  >
+                 </nav>     
+             </div>
+         </div>
+     </div> 
+     <!------------------------------tablaux exercice est les solution--------------->
+     <div class="colon-1">
+         <table>
+             <tr>
+                 <td><button onclick="boo1()" class="boo-1">EX-1</button></td>
+                 <td><a href="exercice-1.html"><button class="boo-2">solution--Ex-1</button></a></td>
+             </tr>
+             <tr>
+                 <td><button onclick="boo2()" class="boo-1">EX-2</button></td>
+                 <td><a href="exercice-2.html"><button class="boo-2">solution--Ex-2</button></a></td>
+             </tr>
+             <tr>
+                 <td><button onclick="boo3()" class="boo-1">EX-3</button></td>
+                 <td><a href="exercice-3.html"><button class="boo-2">solution--Ex-3</button></a></td>
+             </tr>
+             <tr>
+                 <td><button onclick="boo4()" class="boo-1">EX-4</button></td>
+                 <td><a href="exercice-4.html"><button class="boo-2">solution--Ex-4</button></a></td>
+             </tr>
+             <tr>
+                 <td><button onclick="boo5()" class="boo-1">EX-5</button></td>
+                 <td><a href="exercice-5.html"><button class="boo-2">solution--Ex-5</button></a></td>
+             </tr>
+        </table>
+     </div>
+
+     <!-------------------------h1 ki affiche les text d'exercice------------------>
+     <div class="colon-2">
+         <h1  id="main"></h1>
+     </div>
+
+
+
+<script>
+     /*------------------menu---------------*/
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function  menutoggle(){
+        if( MenuItems.style.maxHeight == "0px"){
+             MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+    
+    /*--------------------click-sur les exercice pour affiche dans div classe->colon-2-------------*/
+     const elt = document.getElementById('main');
+         function boo1(){
+             elt.innerHTML=" <p>1-Écrivez un programme pour vérifier si un alphabet saisi dans une zone de texte est unevoyelle ou une consonne</p>";
+             elt.className="elt";
+         }
+         function boo2(){
+             elt.innerHTML=" <p>2-Placer des noms d'mages dans un tableau JavaScript et programmer leur affichage une par une contrôlée par deux boutons, un Précédent, un Suivant.</p>";
+             elt.className="elt";
+         }
+         function boo3(){
+             elt.innerHTML=" <p>3-Écrivez un programme qui permet d’entrer le numéro du jour de la semaine (1-7)et afficher le nom du jour de la semaine correspondant .</p>";
+             elt.className="elt";
+         }
+         function boo4(){
+             elt.innerHTML=" <p>4-Soit le tableau suivant: var fournitures= [ ‘stylo', ‘crayon', ‘règle', ‘gomme' ]; <br> crire un programme qui : <br> 1.Affiche la liste de fournitures disponibles; <br> 2.Demande au client quel fourniture il désire acheter: <br>•s’il est présent dans le tableau fournitures: le retirer du tableau, et afficher ‘ok!’, <br>•sinon, afficher ‘indisponible…’. <br>3.Affiche à nouveau la liste de fournitures disponibles.</p>";
+             elt.className="elt";
+         }
+         function boo5(){
+             elt.innerHTML=" <p>5-Écrivez un programme pour vérifier si un alphabet saisi dans une zone de texte est unevoyelle ou une consonne</p>";
+             elt.className="elt";
+         }
+</script>
+</body>
+</html>

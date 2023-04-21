@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:  radial-gradient(#ffef08,#fafaf9,#0bd1ef);
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 2px 2px 1px rgba(19, 16, 16, 0.619);
+}
+nav{
+    flex: 1;
+    text-align: right;
+   
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ff0000;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+
+
+
+ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transform: 0.5s;
+}
+ul li:hover::after{
+     width: 100%;
+}
+nav .fa{
+    display: none;
+    background-color: #0a0101;
+
+}
+
+/*--------------media for munu----------------*/
+@media  screen and (max-width:800px) {
+     
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        z-index: 100;
+        width: 100%;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    nav ul li a{
+        color: #fff;
+
+    }
+    .menu-icon{
+        cursor: pointer;
+        
+    }
+}
+table{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+button{
+    margin: 10px;
+     width: 90%;
+     height: 6vh;
+     font-size: 20px;
+     color: #fff;
+
+}
+.boo-1{
+    width: 60%;
+    background-color: #f44336;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.boo-2{
+    background-color: #2905f4;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.boo-1:hover{
+    transform: translateY(-5px);
+    background-color: #fff12b;
+    color: #0a0101;
+    cursor:cell;
+}
+.boo-2:hover{
+    transform: translateY(-5px);
+    background-color: #f70000;
+    color: #ffffff;
+    cursor:col-resize;
+    
+}
+.colon-2{
+   
+    width: 80%;
+    height: 200px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.elt{
+    color: #fbf2f2;
+    background-color: #ff5c0a;
+    border: 10px solid black;
+    text-shadow: 5px 4px 3px  rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    height: 100;
+    font-size: 25px;
+}

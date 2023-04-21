@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercice-1.css">
+    <title>Document</title>
+</head>
+<body >
+     <!--------------------nav bar--------------->
+     <header class="container-1">
+         <div class="header">
+             <div class="container1">
+                 <div class="navbar">
+                     <div class="logo">
+                         <img src="logo-1.png" width="50px">
+                     </div>
+                     <nav>
+                         <ul id="MenuItems">
+                             <li><a href="home.html">HOME</a></li>
+                             <li><a href="solution.html">EXERCICE</a></li>
+                             <li><a href="contact.html">CONTACT</a></li>
+                         </ul>
+                         <img src="menu.png" class="menu-icon"  width="30px" onclick="menutoggle()"  >
+                     </nav>     
+                 </div>
+             </div>
+         </div>
+     </header>
+
+
+<!---------section 1----------------->
+ <section class="section-1">
+     <div class="container-2">
+         <div class="row-2">
+             <h1>CONTACT</h1>
+             <h2>YOUR DETAILS</h2>
+             <h3>Let me know hew to get to you</h3>
+         </div>
+         <div class="row-3">
+             <div class="label-1">
+                 <label for="">First Name <i>*</i></label><br>
+                 <input type="text" placeholder="entre first Name" >
+             </div>
+             <div class="label-1">
+                 <label for="">Last Name <i>*</i></label><br>
+                 <input type="text" placeholder="entre laste name">
+             </div>
+             <div class="label-1">
+                 <label for="">Email Address <i>*</i></label><br>
+                 <input type="text" placeholder="entre email">
+             </div>
+             <div class="label-1">
+                 <label for="">First Name<i>*</i></label><br>
+                 <input type="text" >
+             </div>
+             <div class="label-1">
+                 <label for="">Last Name<i>*</i></label><br>
+                 <input type="text">
+             </div>
+             <div class="label-1">
+                 <label for="">Email Address<i>*</i></label><br>
+                 <input type="text">
+             </div>
+         </div>
+     </div>
+     <div class="row-4">
+         <h1>HOW CAN I HELP</h1>
+         <h3>Feel free to ask a question or simple leave a comment</h3>
+     </div>
+     <div class="row-5">
+         <h1>commwnts/Auestions</h1>
+         <textarea ></textarea>
+         <button>SEND MESSAGE</button>
+     </div>
+     <div class="row-6">
+         <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde inventore <br> excepturi quisquam illum reiciendis, ea placeat : <a href="gmail.com"> kamalkhalid234l@gmail.com: </a></h1>
+     </div>
+ </section>
+
+
+
+<script>
+    /*--------------------menu----------------*/
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function  menutoggle(){
+        if( MenuItems.style.maxHeight == "0px"){
+             MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }     
+    }
+ </script>
+</body>
+</html>

@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:  radial-gradient(#ffffff,hsl(188, 40%, 25%));
+  
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, q);
+    box-shadow: 1px 2px 2px 1px rgba(19, 16, 16, 0.619);
+}
+nav{
+    flex: 1;
+    text-align: right;   
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ff0606;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+
+
+
+ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transform: 0.5s;
+}
+ul li:hover::after{
+     width: 100%;
+}
+nav .fa{
+    display: none;
+    background-color: #0a0101;
+
+}
+
+/*--------------media for munu----------------*/
+@media  screen and (max-width:800px) {
+     
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        z-index: 100;
+        width: 100%;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    nav ul li a{
+        color: #fff;
+
+    }
+    .menu-icon{
+        cursor: pointer;
+        
+    }
+}
+/*---------------exercive1-----------*/
+.body{
+    margin-top: 20px;
+    display: grid;
+    background-color: #0a0101;
+    gap: 20px;
+}
+.kio{
+    height: 40vh;
+    border: 10px solid black;
+    background-color: blue;
+    width: 90%;
+    margin-left: 5%;
+    display: table;
+    
+}
+
+#pol{
+    font-size: 40px;
+    text-align: center;
+    width: 80%;
+    height: 10vh;
+    margin-left:10%;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    border: 6px solid rgb(246, 8, 8);
+  
+}
+
+#pol:hover{
+    background-color: rgba(255, 242, 0, 0.812);
+}
+button{
+    padding: 10px 100px;
+    margin: 20px;
+    box-shadow:5px 5px 2px 2px rgb(235, 16, 16);
+    font-size: 20px;
+
+}
+button:hover{
+    transform: translateY(-10px);
+    background-color: #e30909;
+    box-shadow:5px 5px 2px 2px rgb(60, 0, 255);
+    color: #efefef;
+
+}
+#kamal{
+     margin: 10px;
+    font-size: 30px;
+    color: #fff;
+    border: 10px solid rgb(220, 214, 214);
+    background-color: rgba(245, 12, 12, 0.7);
+    height: 30%;
+    text-align: center;
+  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.col-1{
+     color: #fff;
+    background-color: #f24d4d;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(230, 12, 12);
+    width: 80%;
+    margin-left: 10%;
+}
+.old-2{
+    width: 60%;
+    margin-left: 20%;
+    background-color: #06ff72;
+    border: 6px solid black;
+    text-shadow: 2px 2px 2px rgb(253, 2, 2);
+    font-size: 2rem;
+    color: #000000;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.old-3{
+    display: flex;
+    margin-left: 10%;
+}
+
+/*--------------------tout.html0--les bouton----------*/
+.coup-1 button{
+    width: 50%;
+    text-align: center;
+    margin-left:20%;
+}
+
+.coup-2 input{
+    margin-left:5% ;
+    height: 20vh;
+    width: 90%;
+    background-color: #000000;
+    color: #efefef;
+    font-size: 20PX;
+}
+.coup-11{
+    display: table;
+    padding: 7px 220px;
+    font-size: 22px;
+}
+/*------------------contacte--------------*/
+
+.section-1{
+    margin-top: 30px;
+}
+.row-2 h1{
+    font-size: 250%;
+    text-align: center;
+    color: #e30909;
+    font-weight: 1000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.row-2 h2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 100;
+}
+.row-2 h3{
+    font-size: 12px;
+    text-align: center;
+    color: #2e09ff;
+    font-weight: 100;
+}
+.row-3{
+    margin-top: 30px;
+    margin-left:15%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,auto));
+}
+input{
+     width: 400px;
+     height: 30px;
+}
+label{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+}
+table{
+    display:inline-flex;
+    margin-left: 25%;
+}
+.row-4{
+    margin: 30px;
+}
+.row-4 h1{
+    text-align: center;
+    color: #e30909;
+    margin-bottom: 10px;
+}
+.row-4 h3{
+    text-align: center;
+}
+
+
+.row-5{
+   
+    margin-top: 30px;
+    margin: 10px;
+    display: table;
+    width: 100px;
+}
+.row-5 h1{
+    margin-left: 25%;  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}  
+.row-5 textarea{
+    margin-left: 25%;
+    width: 60vw;
+    height: 20vh;
+}
+.row-5 button{
+    margin-left: 25%;
+    background-color: #0a8556;
+    color: #fff;
+    padding: 10px 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.row-6{
+    margin-left: 15%;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+i{
+    color: #e30909;
+}
+label{
+    font-weight: 1000;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+/*--------------------homme----------------*/
+.function-1{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%),url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 89vh;
+}
+.text-box{
+    width: 90%;
+    color: rgb(222, 222, 53);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-shadow: 4px 4px 4px rgb(232, 7, 7,0.5);
+}
+
+.text-box h1{
+    font-size: 66px;
+}
+.text-box h2{
+    font-size: 4rem;
+    color: #e30909;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 4px 4px 4px rgb(255, 253, 253);
+    border: 6px solid rgb(240, 236, 236);
+    background-color: #baea0a5d;
+    margin-bottom: 100px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #ff1100;
+    background: #fe1100;
+    transition: 1s;
+}
+
+
+/*--------------exercice2---------------*/
+.image img{
+    height: 50vh;
+}
+.image img{
+   
+   width: 25%;
+   margin-left: 37%;
+   border: 10px solid black;
+}
+.les-bouton{
+    border: 8px solid black;
+    background-color: #0a8556;
+    width: 85%;
+    margin-left: 10%;
+}
+.les-bouton button{
+    margin-left: 10%;
+}
+/*-------------------exercice4----------*/
+#boup{
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px rgb(249, 7, 7);
+}
+.entre-1{
+    background-color: rgb(241, 5, 5);
+    color: #efefef;
+    border: 5px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 80%;
+    margin-left: 10%;
+    height: 20vh;
+    text-align: center;
+    font-size: 40px;
+   border-radius: 20px;
+}
+.entre-3{
+    
+    background-color: rgb(241, 5, 241);
+    color: #efefef;
+    border: 5px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 80%;
+    margin-left: 10%;
+    height: 10vh;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 200px 200px 0px 0px;
+}
+.entre-4{
+    background-color: rgb(109, 5, 227);
+    color: #efefef;
+    border: 5px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 80%;
+    margin-left: 10%;
+    height: 13vh;
+    text-align: center;
+    font-size: 30px;
+}
+
+#ont1{
+    border: 5px solid black;
+    width: 60%;
+    margin-left: 20%;
+    height: 100px;
+    font-size: 30px;
+}
+
+/*-----------------exercice 3------------*/
+
+
+.jour{
+    background-color: #8206ff;
+    border: 10px solid black;
+    width: 80%;
+    margin-left: 10%;
+    color: #efefef;
+    font-family:'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 2px rgb(255, 0, 0);
+}

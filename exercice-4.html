@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exercice-1.css">
+    
+</head>
+<body class="body">
+    <div class="old">
+          <h1 class="col-1"><marquee >exercice--4</marquee></h1>
+    </div>
+    <div>
+         <button onclick="coop()" id="boup">sel3a</button>
+         <h1 id="ont"></h1>
+    </div>
+    <div>
+         
+         <button onclick="cooi()" id="boup">acheter </button>
+         <h1 id="ont2"></h1><br>
+         <h1  id="ont3"></h1><br>
+         <h1 id="ont4"></h1>
+    </div>
+    <div>
+      <a href="solution.html"><button  id="boup" >retour</button></a>
+    </div>
+         
+  </div>
+    
+    <script>
+        // Définir le tableau de fournitures
+     var fournitures = ['stylo', 'crayon', 'règle', 'gomme'];
+     const entre=document.getElementById("ont");
+     const entre2=document.getElementById("ont2");
+     const entre3=document.getElementById("ont3");
+     const entre4=document.getElementById("ont4");
+
+     function coop(){
+         entre.innerHTML +="Fournitures disponibles est  : " + fournitures.join(", ");
+         entre.className="entre-1"
+      
+     }
+     function cooi(){
+         var choix = prompt('acheter ::'); 
+         var kamal = fournitures.indexOf(choix);
+             if (kamal !== -1) {
+                 fournitures.splice(kamal, 1);
+                 entre2.innerHTML +="Ok !";
+             } else {
+                 entre2.innerHTML +="Indisponible...";
+             }
+             entre3.innerHTML +="Fournitures disponibles est  : " + fournitures.join(", ");
+             /*------style.css*/
+             entre2.className="entre-3"
+             entre3.className="entre-4"
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exercice-1.css">
+</head>
+<body class="body">
+     <div class="old">
+          <h1 class="col-1"><marquee >exercice--</marquee></h1>
+     </div>
+     <div class="old-2">
+         <p>Placer des noms d'mages dans un tableau JavaScript et programmer leur affichage une par 
+            une contrôlée par deux boutons, un Précédent, un Suivant.</p>    
+     </div>
+     <div class="image">
+         <img id="image" src="khalid.png">
+     </div>
+     <div class="les-bouton">
+         <button id="pre">Précédent</button>
+         <button id="nex">Suivant</button>
+         <a href="solution.html"><button >retour</button></a>
+     </div>
+
+
+
+<script>
+  /*-----------------les image-----------------*/
+     var images = ["khalid.png","oussa.png", "pronto.png", "10p.jpeg","11p.jpeg","10p.jpeg"];
+     var kamal = 0;
+     var image_khalid = document.getElementById("image");
+     var prev_khalid = document.getElementById("pre");
+     var next_khalid = document.getElementById("nex");
+
+     function displayCurrentImage() {
+          image_khalid.src = images[kamal];
+     }
+
+
+     /*-----------------buuton---precedent--------------*/
+     prev_khalid.addEventListener("click", function() {
+         kamal--;
+         if (kamal < 0) {
+             kamal = images.length;
+         }
+         displayCurrentImage();
+     });
+
+
+    /*-----------------buuton---suivante--------------*/
+     next_khalid.addEventListener("click", function() {
+         kamal++;
+         if (kamal >= images.length) {
+           kamal = 0;
+         }
+         displayCurrentImage();
+     });
+       
+</script>
+</body>
+</html>
